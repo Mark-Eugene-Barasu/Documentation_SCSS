@@ -1,9 +1,25 @@
-@import "./config";
-@import "./aside";
-@import "./mainSection";
-@import "./footer";
 
 body {
-    background-color: darkslategray;
-    color: white
+    background-color: grey;
+    color: white;
+    h2 {
+        color: black;
+        text-align: center;
+        background-color: lighten(lightgray, 100%);
+        border-bottom: 5px solid black;
+    }
+    ul {
+        li {
+            color: chartreuse;
+            &:first-child {
+                color: pink;
+            }
+            &:nth-child(2) {
+                color: lightblue;
+            }
+            &:last-child {
+                text-transform: uppercase;
+            }
+        }
+    }
 }
